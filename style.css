@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(20, 199, 223),
+    rgb(135, 15, 233)
+  );
+  border-radius: 10px;
+  padding: 90px;
+  margin: auto;
+  margin-top: 50px;
+
+  width: 50%;
+  box-shadow: 2px;
+  overflow: hidden;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-transform: capitalize;
+  font-family: "Signika Negative", sans-serif;
+  height: 400px;
+  font-size: 16px;
+}
+
+input {
+  text-align: center;
+  width: 450px;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.newSens {
+  margin-top: 50px;
+  background-image: linear-gradient(
+    to right,
+    rgb(200, 255, 1),
+    rgb(0, 247, 255)
+  );
+  width: 1000px;
+  padding: 20px;
+}
+
+.reset {
+  margin-top: 30px;
+  padding: 10px;
+  width: 100px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.comoFunciona {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.comoFunciona p {
+  width: 70%;
+  color: rgb(0, 0, 0);
+  line-height: 29px;
+}
+.title {
+  text-align: center;
+  color: black;
+  padding: 30px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(238, 238, 238);
+  border-top: rgb(132, 0, 255) 5px solid;
+}
+.reset:hover {
+  background-color: rgb(196, 217, 255);
+}
+#alert1,
+#alert2 {
+  position: absolute;
+  left: 20%;
+  font-size: 13px;
+  padding: 7px;
+  border-radius: 5px;
+}
+article {
+  background-color: rgb(238, 238, 238);
+  width: 70%;
+  margin: auto;
+  padding: 80px;
+  border-radius: 25px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  margin-bottom: 20px;
+}
+
+.infoDpi {
+  margin-bottom: 20px;
+}
+.dpiFormula {
+  margin-top: 30px;
+}
+
+.infoDpi p,
+.dpiFormula p {
+  font-weight: bold;
+}
+hr {
+  margin-top: 40px;
+}
+
+.dpiFormula span {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 765px) {
+  main {
+    width: 35%;
+  }
+
+  input {
+    width: 250px;
+  }
+  article {
+    background-color: white;
+    width: 55%;
+    line-height: 29px;
+    margin-top: 0px;
+  }
+  .comoFunciona {
+    margin-top: 50px;
+  }
+}

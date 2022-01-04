@@ -4,9 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Signika+Negative&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <div class="title">
+      <h1>DPI CALCULATOR FOR ALL GAMES</h1>
+      <h2>Works for CSGO, LoL, Fornite, Cod, etc.</h2>
+    </div>
+    <main>
+      <div class="currentDpi">
+        <h3>CURRENT DPI:</h3>
+        <input type="number" class="current_dpi_input" />
+        <div id="alert1"></div>
+      </div>
+
+      <div class="currentSensitivity">
+        <h3>CURRENT SENSITIVITY:</h3>
+        <div class="container">
+          <input type="number" class="current_sensitivity_input" />
+          <div id="alert2"></div>
+        </div>
+      </div>
+
+      <div class="newDpi">
+        <h3>NEW DPI:</h3>
+        <input type="number" class="new_dpi_input" />
+      </div>
+
+      <div class="newSens">
+        <h3>NEW SENSITIVITY:</h3>
+        <input disabled type="number" class="new_sensitivity_input" />
+        <br />
+      </div>
+      <button class="reset">Reset</button>
+    </main>
+    <div class="comoFunciona">
+      <h3>Así es como funciona:</h3>
+      <p>
+        La calculadora de DPI calcula la configuración del mouse por usted:
+        simplemente ingrese su DPI y sensibilidad actuales y el nuevo DPI para
+        obtener la salida de la nueva sensibilidad. Así es como puede cambiar su
+        DPI, pero la configuración se mantendrá constante.
+      </p>
+    </div>
+    <article>
+      <div class="infoDpi">
+        <h2>Información sobre la calculadora de ratón DPI:</h2>
+        <p>
+          La calculadora de DPI es adecuada para cualquiera que desee cambiar la
+          configuración de DPI pero le gustaría tener el mismo manejo del mouse.
+          Puede usar la calculadora para determinar exactamente la misma
+          sensibilidad del mouse, a fin de permitir un comportamiento operativo
+          constante y constante para su nuevo número de DPI.
+        </p>
+      </div>
+
+      <hr />
+
+      <div class="dpiFormula">
+        <h2>¿Cuál es la fórmula para calcular DPI y sensibilidad?</h2>
+        <p>
+          Para calcular la nueva sensibilidad de un mouse al cambiar el número
+          de DPI, multiplique el DPI antiguo por la sensibilidad y simplemente
+          divídalo por el nuevo número de DPI. Con esta fórmula puede calcular
+          rápida y fácilmente la nueva sensibilidad.
+        </p>
+        <span
+          >( DPI actual x Sensibilidad actual) / Nuevo DPI = Nueva sensibilidad
+        </span>
+      </div>
+
+      <hr />
+    </article>
+  </body>
 </html>

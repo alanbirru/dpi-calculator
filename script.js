@@ -30,20 +30,42 @@ function resetButton() {
   document.querySelector(".new_dpi_input").value = 800;
   document.querySelector(".new_sensitivity_input").value = 0.6;
 }
+let alert1 = document.querySelector("#alert1");
+let alert2 = document.querySelector("#alert2");
+let content = document.createElement("p");
+
+function alertEmpty(alert) {
+  alert.classList.add("alert");
+  alert.textContent = "Este campo es requerido";
+
+  container.appendChild(content);
+}
 
 document
   .querySelector(".current_dpi_input")
   .addEventListener("input", function () {
-    // if (this.value === "") {
-
-    // }
-    calculateDpi();
+    if (this.value === "") {
+      alert1.style.backgroundColor = "#e60000";
+      alertEmpty(alert1);
+    } else {
+      calculateDpi();
+      alert1.style.backgroundColor = "transparent";
+      alert1.textContent = "";
+    }
   });
 
 document
   .querySelector(".current_sensitivity_input")
   .addEventListener("input", function () {
-    calculateDpi();
+    if (this.value === "") {
+      alert2.style.backgroundColor = "#e60000";
+
+      alertEmpty(alert2);
+    } else {
+      calculateDpi();
+      alert2.style.backgroundColor = "transparent";
+      alert2.textContent = "";
+    }
   });
 
 document.querySelector(".new_dpi_input").addEventListener("input", function () {
@@ -52,4 +74,18 @@ document.querySelector(".new_dpi_input").addEventListener("input", function () {
 
 document.querySelector(".reset").addEventListener("click", function () {
   resetButton();
+  alert1.style.backgroundColor = "transparent";
+  alert2.style.backgroundColor = "transparent";
+  alert1.textContent = "";
+  alert2.textContent = "";
 });
+
+// navbar
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
